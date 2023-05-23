@@ -7,14 +7,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Number System Converter</title>
 
-   <link rel="stylesheet" href="number-system-converter.css">
-   <script src="number-system-converter.js" defer></script>
+   <link rel="stylesheet" href="nusco.css">
+   <script src="nusco.js" defer></script>
 </head>
 
 <body>
    <main>
       <h1>NUSCO</h1>
-
+<!-- selection containers ,from-->
       <div id="select-container">
          <select id="from-select">
             <option value="from-binary">Binary</option>
@@ -23,6 +23,8 @@
             <option value="from-octal">Octal</option>
          </select>
          <span>to</span>
+
+      <!-- selection containers ,to-->
          <select id="to-select">
             <option value="to-binary">Binary</option>
             <option value="to-decimal">Decimal</option>
@@ -36,6 +38,8 @@
          <span id="error"></span>
       </div>
 
+      <!-- convert button -->
+
       <button id="convert-button">Convert</button>
 
       <input type="text" id="to-input" placeholder="Binary Number" readonly>
@@ -43,6 +47,7 @@
 
 
 </body>
+<!-- base footer -->
 
 <footer>
    <p>©NUSCO2023 .ALL RIGHTS RESERVED</p>
