@@ -4,6 +4,8 @@ const from = document.getElementById("from-input");
 const to = document.getElementById("to-input");
 const error = document.getElementById("error");
 
+
+
 let fromNS = "Binary", toNS = "Binary";
 
 fromSelected.addEventListener("change", function () {

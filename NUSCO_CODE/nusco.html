@@ -9,11 +9,21 @@
 
    <link rel="stylesheet" href="nusco.css">
    <script src="nusco.js" defer></script>
-</head>
+
+
+
+   </head>
 
 <body>
+   
+   
    <main>
-      <h1>NUSCO</h1>
+     
+      <img src="images/moon.png" id="icon">
+
+      <h1>NUSCO</h1>   
+     
+    
 <!-- selection containers ,from-->
       <div id="select-container">
          <select id="from-select">
@@ -45,12 +55,26 @@
       <input type="text" id="to-input" placeholder="Binary Number" readonly>
    </main>
 
+<!-- base footer -->
+   <footer>
+      <p>©NUSCO2023 .ALL RIGHTS RESERVED</p>
+   </footer>
+
+
+<!-- js for changing theme -->
+   <script>
+    var icon = document.getElementById("icon");
+
+   icon.onclick = function(){
+         document.body.classList.toggle("dark-theme")
+   if(document.body.classList.contains("dark-theme")){
+      icon.src = "images/sun.png";
+
+   }else{
+      icon.src="images/moon.png"
+   }
+}
+   </script>
 
 </body>
-<!-- base footer -->
-
-<footer>
-   <p>©NUSCO2023 .ALL RIGHTS RESERVED</p>
-</footer>
-
 </html>
